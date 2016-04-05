@@ -30,6 +30,7 @@ namespace HttpHelper
             {
                 request.ContentType = "application/x-www-form-urlencoded";
             }
+            request.Method="POST";
             var stream = request.GetRequestStream();
             
             using (var writer = new StreamWriter(stream))
